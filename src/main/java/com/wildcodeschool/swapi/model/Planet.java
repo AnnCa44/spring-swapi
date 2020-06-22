@@ -7,16 +7,16 @@ public class Planet {
     // add attributes
     private String name;
     @JsonProperty("rotation_period")
-    private Integer rotationPeriod;
+    private String rotationPeriod;
     @JsonProperty("orbital_period")
-    private Integer orbitalPeriod;
-    private Integer diameter;
+    private String orbitalPeriod;
+    private String diameter;
     private String climate;
     private String gravity;
     private String terrain;
     @JsonProperty("surface_water")
-    private Integer surfaceWater;
-    private Integer population;
+    private String surfaceWater;
+    private String population;
     private String[] residents;
     private String[] films;
     private String created;
@@ -28,6 +28,7 @@ public class Planet {
     }
 
     // add getters and setters
+
     public String getName() {
         return name;
     }
@@ -36,27 +37,27 @@ public class Planet {
         this.name = name;
     }
 
-    public Integer getRotationPeriod() {
+    public String getRotationPeriod() {
         return rotationPeriod;
     }
 
-    public void setRotationPeriod(Integer rotationPeriod) {
+    public void setRotationPeriod(String rotationPeriod) {
         this.rotationPeriod = rotationPeriod;
     }
 
-    public Integer getOrbitalPeriod() {
+    public String getOrbitalPeriod() {
         return orbitalPeriod;
     }
 
-    public void setOrbitalPeriod(Integer orbitalPeriod) {
+    public void setOrbitalPeriod(String orbitalPeriod) {
         this.orbitalPeriod = orbitalPeriod;
     }
 
-    public Integer getDiameter() {
+    public String getDiameter() {
         return diameter;
     }
 
-    public void setDiameter(Integer diameter) {
+    public void setDiameter(String diameter) {
         this.diameter = diameter;
     }
 
@@ -84,19 +85,19 @@ public class Planet {
         this.terrain = terrain;
     }
 
-    public Integer getSurfaceWater() {
+    public String getSurfaceWater() {
         return surfaceWater;
     }
 
-    public void setSurfaceWater(Integer surfaceWater) {
+    public void setSurfaceWater(String surfaceWater) {
         this.surfaceWater = surfaceWater;
     }
 
-    public Integer getPopulation() {
+    public String getPopulation() {
         return population;
     }
 
-    public void setPopulation(Integer population) {
+    public void setPopulation(String population) {
         this.population = population;
     }
 
